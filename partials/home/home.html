@@ -1,0 +1,40 @@
+<div class="header">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-9">
+        <!-- Logo -->
+        <div class="logo">
+          <h1><a href="index.html">Bootstrangular</a></h1>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="navbar navbar-inverse" role="banner">
+          <nav class="collapse navbar-collapse bs-navbar-collapse navbar-right" role="navigation">
+            <ul class="nav navbar-nav">
+              <li class="dropdown">
+                <a href="javascript:;" ng-click="vm.logout()" class="dropdown-toggle" data-toggle="dropdown">
+                  <i class="fa fa-sign-out fa-lg"></i>Logout
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-md-2">
+      <div class="sidebar content-box" style="display: block;">
+        <ul class="nav">
+          <!-- Main menu -->
+          <li class="current"><a ui-sref=".tasks"><i class="fa fa-wpforms"></i>Tasks</a></li>
+        </ul>
+      </div>
+    </div>
+    <div id="main-pages" class="col-md-10">
+      <div ui-view></div>
+    </div>
+  </div>
+</div>
